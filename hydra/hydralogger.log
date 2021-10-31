@@ -1,0 +1,3 @@
+Hydra main.go:11: Starting Hydra Web Service
+Hydra main.go:22: &{0xc000112aa0 0xc000158200 {} 0x10af360 true false false false 0 {0 0} 0xc00002a540 {0xc0001440e0 map[] false false} map[] false 36 -1 200 false false [] 0 [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0 0 0] [0 0 0] 0xc000024150 0} Received and http GET request on root url
+Hydra main.go:22: &{0xc000188000 0xc000192000 {} 0x10af360 true false false false 0 {0 0} 0xc00018e0c0 {0xc0001a2000 map[] false false} map[] false 36 -1 200 false false [] 0 [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0 0 0] [0 0 0] 0xc0001a0000 0} Received and http GET request on root url
