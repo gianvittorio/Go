@@ -1,0 +1,14 @@
+Hydra rooms.go:65: Starting chat room HydraChat
+Hydra hydrachat.go:50: Received request from client 127.0.0.1:50014
+Hydra hydrachat.go:50: Received request from client 127.0.0.1:50015
+Hydra hydrachat.go:50: Received request from client 127.0.0.1:50016
+Hydra clients.go:24: gianvi:Hello, this is gianvi
+Hydra clients.go:24: mina:Fanculo, mina
+Hydra clients.go:24: jim:Yo now
+Hydra hydrachat.go:40: Error accepting connection from char client  accept tcp [::]:2300: use of closed network connection
+Hydra rooms.go:49: Removing client 
+Hydra rooms.go:49: Removing client 
+Hydra hydrachat.go:40: Error accepting connection from char client  accept tcp [::]:2300: use of closed network connection
+Hydra hydrachat.go:40: Error accepting connection from char client  accept tcp [::]:2300: use of closed network connection
+Hydra hydrachat.go:40: Error accepting connection from char client  accept tcp [::]:2300: use of closed network connection
+Hydra hydrachat.go:40: Error accepting connection from char client  accept tcp [::]:2300: use of closed network connection
