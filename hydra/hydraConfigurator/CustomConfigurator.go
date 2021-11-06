@@ -65,7 +65,6 @@ func MarshalCustomConfig(v reflect.Value, filename string) error {
 			continue
 		}
 		args := strings.Split(line, "|")
-		
 		valueType := strings.Split(args[1], ";")
 		name, value, vtype := strings.TrimSpace(args[0]), 
 			strings.TrimSpace(valueType[0]), 
@@ -91,7 +90,7 @@ func MarshalCustomConfig(v reflect.Value, filename string) error {
 				fieldValue.Set(v)
 			}
 		}
-
-		return nil
 	}
+
+	return nil
 }
