@@ -1,0 +1,29 @@
+version: '3.3'
+
+services:
+  hydra-postgresql-db:
+    container_name: hydra-postgresql-db
+    image: postgres:13.4-alpine
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    networks:
+      - hydra-network
+    ports:
+      - 5432:5432
+    volumes:
+      - hydra-postgresl-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-q", "-d", "${POSTGRES_DB}", "-U", "${POSTGRES_USER}" ]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+
+
+networks:
+  hydra-network:
+
+
+volumes:
+  hydra-postgresl-db-volume:
