@@ -38,13 +38,15 @@ func runClient(dest string) {
 		Shipname: "Hydra",
 		CaptainName: "Jala",
 		Crew: []*hydraproto.Ship_CrewMember{
-			&hydraproto.Ship_CrewMember{1, "Kevin", 5, "Pilot"},
-			&hydraproto.Ship_CrewMember{2, "Jade", 4, "Tech"},
-			&hydraproto.Ship_CrewMember{3, "Wally", 5, "Engineer"},
+			{Id: 1, Name: "Kevin", SecClearance: 5, Position: "Pilot"},
+			{Id: 2, Name: "Jade", SecClearance: 4, Position: "Tech"},
+			{Id: 3, Name: "Wally", SecClearance: 5, Position: "Engineer"},
 		},
 	}
 
 	if err := c.EncodeAndSend(ship, dest); err != nil {
 		log.Println("Error occurred while sending message", err)
+	} else {
+		log.Println("Send operation succeeded")
 	}
 }
