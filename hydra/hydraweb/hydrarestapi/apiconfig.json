@@ -1,0 +1,4 @@
+{
+    "database": "mysql",
+    "connectionstring": "user=test password=test dbname=test sslmode=disable port=5432"
+}

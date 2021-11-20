@@ -12,6 +12,5 @@ func decodeJSONConfig(v interface{}, filename string) error {
 	if err != nil {
 		return err
 	}
-
 	return json.NewDecoder(file).Decode(v)
 }
